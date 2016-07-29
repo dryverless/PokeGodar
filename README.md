@@ -1,7 +1,13 @@
 ###Cups of coffee donated: :coffee:
 
 # PokeGodar
-###Status: Not Building - yet. Subroutines, Layouts, etc, still being added.
+###Status:
+
+- [ ] Web Maps - Builds. Ready for demo Azure Search index / key to try out. Needs Icon assets, and other HTML/CSS stuff.
+- [ ] Web API - Builds. Runtime error, see this [comment](https://github.com/dotnet/corefx/issues/9846#issuecomment-234315688). API Methods below. Bot Framework and Azure Search are being added. Needs web.config file additions to run.
+- [ ] Swift2 - Not Building. Base project, hasn't had the API or Maps put in yet.
+- [ ] Swift3 - Not Building. Similar to Swift2, except uses a fork of pgoapi-swift that is converted to Swift3 with Beta dependencies.
+
 Sample project in C# and Swift 3 to demonstrate building a comprehensive Pokemon Go Radar / Bot with backend which can be scaled to accomodate any level of traffic. This project is sponsored by [Dryverless, Inc.](http://www.dryverless.com) and is a non-commercial project covered by fair use exemption for the purposes of research and commentary.
 
 ####Planned Features
@@ -21,6 +27,60 @@ This repo, when complete, will contain a sample full application (client and bac
 
 Real-time support is handled via websockets and SignalR for the purposes of demonstration. If you choose to use a backplane, you should be aware of latency or cost issues that might be incurred.
 
+### Current API Methods List
+
+#### Bot Utils
+
+- [ ] Farm Pokestops and Pokemon (Auto Play Enabled)
+
+#### Player Utils
+
+- [x] Get Profile
+- [x] Get Settings
+- [x] Get Best Ball
+- [x] Recycle Item
+- [x] Get Items
+- [x] Get Inventory
+- [x] Use Capture Items
+- [x] UseRazzBerry
+- [x] Use Item XP Boost
+- [ ] Update Player Location
+- [ ] Get Xp Differential
+- [ ] Get Total Pokemon
+- [ ] Get Total Experience
+- [ ] Get Current Level
+
+#### Pokemon Utils
+
+- [x] Catch Pokemon
+- [x] Encounter Pokemon
+- [x] Transfer Pokemon
+- [x] Evolve Pokemon
+- [ ] Evolve All Given Pokemon
+- [ ] Catch All Nearby Pokemon
+- [ ] Transfer All But Strongest Unwanted Pokemon
+- [ ] Transfer All Given Pokemon
+- [ ] Transfer Duplicate Pokemon
+- [ ] Transfer All Weak Pokemon
+- [ ] Calculate Perfect
+
+#### Map Utils
+
+- [x] Get Map Objects
+
+#### Fort Utils
+
+- [x] Get Fort
+- [x] Search Fort
+
+#### Login Utils
+
+- [ ] Do Ptc Login
+- [ ] Do Google Login
+    - [ ] Do Google OAuth Login
+    - [ ] Get Access Token?
+
+
 <hr />
 
 ####If you looking for a fully-supported development framework for quickly launching mobile applications, inquire via e-mail: [sales@dryverless.com](mailto:sales@dryverless.com?Subject=Ahtau Sales). Ask for a license to use the Ahtau Framework.
@@ -32,6 +92,9 @@ Real-time support is handled via websockets and SignalR for the purposes of demo
 ####Azure Service Requirements for Deployment
 
 You must configure the project with your own Azure Search Keys, Azure DocumentDB Database Connection Information, and Bing Maps API Keys.
+
+######For Bot Framework integration, you need to register with your links to Messaging API Endpoint (.../api/Messages), Privacy Statement, Terms of Use, and Microsoft App ID:
+https://dev.botframework.com/bots/new
 
 ######If you are new to Azure, you can get a free trial at the following link: 
 https://azure.microsoft.com/en-us/pricing/free-trial/
