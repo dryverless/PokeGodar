@@ -1,7 +1,13 @@
 ###Cups of coffee donated: :coffee:
 
 # PokeGodar
-###Status: Not Building - yet. Subroutines, Layouts, etc, still being added.
+###Status:
+
+- [ ] Web Maps - Builds. Ready for demo Azure Search index / key to try out. Needs Icon assets, and other HTML/CSS stuff.
+- [ ] Web API - Builds. See API Methods below. Bot Framework and Azure Search are being added. Needs web.config file additions to run.
+- [ ] Swift2 - Not Building. Base project, hasn't had the API or Maps put in yet.
+- [ ] Swift3 - Not Building. Similar to Swift2, except uses a fork of pgoapi-swift that is converted to Swift3 with Beta dependencies.
+
 Sample project in C# and Swift 3 to demonstrate building a comprehensive Pokemon Go Radar / Bot with backend which can be scaled to accomodate any level of traffic. This project is sponsored by [Dryverless, Inc.](http://www.dryverless.com) and is a non-commercial project covered by fair use exemption for the purposes of research and commentary.
 
 ####Planned Features
@@ -86,6 +92,9 @@ Real-time support is handled via websockets and SignalR for the purposes of demo
 ####Azure Service Requirements for Deployment
 
 You must configure the project with your own Azure Search Keys, Azure DocumentDB Database Connection Information, and Bing Maps API Keys.
+
+######For Bot Framework integration, you need to register with your links to Messaging API Endpoint (.../api/Messages), Privacy Statement, Terms of Use, and Microsoft App ID:
+https://dev.botframework.com/bots/new
 
 ######If you are new to Azure, you can get a free trial at the following link: 
 https://azure.microsoft.com/en-us/pricing/free-trial/
