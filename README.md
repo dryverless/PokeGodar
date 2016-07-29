@@ -4,7 +4,7 @@
 ###Status:
 
 - [ ] Web Maps - Builds. Ready for demo Azure Search index / key to try out. Needs Icon assets, and other HTML/CSS stuff.
-- [ ] Web API - Builds. See API Methods below. Bot Framework and Azure Search are being added. Needs web.config file additions to run.
+- [ ] Web API - Builds. Runtime error, see this [comment](https://github.com/dotnet/corefx/issues/9846#issuecomment-234315688). API Methods below. Bot Framework and Azure Search are being added. Needs web.config file additions to run.
 - [ ] Swift2 - Not Building. Base project, hasn't had the API or Maps put in yet.
 - [ ] Swift3 - Not Building. Similar to Swift2, except uses a fork of pgoapi-swift that is converted to Swift3 with Beta dependencies.
 
