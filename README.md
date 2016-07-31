@@ -132,7 +132,10 @@ https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 }
 ```
 
-##Related GitHub Projects / Credits
+#Related GitHub Projects / Credits
+
+###Pokemon-Go-Rocket-API by DetectiveSquirrel
+######https://github.com/DetectiveSquirrel/Pokemon-Go-Rocket-API
 
 ###pgoapi-swift by Luke Sapan
 ######https://github.com/lsapan/pgoapi-swift
@@ -194,7 +197,7 @@ https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 
 ##Support:
 
-#####Send any questions or requests to: support@dryverless.com
+#####Send any questions or requests to: support@dryverless.com. You can reach our chat support on skype via the user: [dryverless](skype:dryverless?chat).
 
 ## Contributing
 
