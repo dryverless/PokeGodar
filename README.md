@@ -3,9 +3,9 @@
 # PokeGodar
 ###Status:
 
-- [ ] Web Maps - Builds. Ready for demo Azure Search index / key to try out. Needs Icon assets, and other HTML/CSS stuff.
+- [x] Web Maps - Builds. Ready for demo Azure Search index / key to try out. Needs Icon assets, and other HTML/CSS stuff.
 - [ ] Web API - Builds. Runtime error, see this [comment](https://github.com/dotnet/corefx/issues/9846#issuecomment-234315688). API Methods below. Bot Framework and Azure Search are being added. Needs web.config file additions to run.
-- [ ] Swift2 - Not Building. Base project, hasn't had the API or Maps put in yet.
+- [ ] Swift2 - Not Building. Base project with Swift-based Pokemon GO API, hasn't had MapKit-related VCs put in yet.
 - [ ] Swift3 - Not Building. Similar to Swift2, except uses a fork of pgoapi-swift that is converted to Swift3 with Beta dependencies.
 
 Sample project in C# and Swift 3 to demonstrate building a comprehensive Pokemon Go Radar / Bot with backend which can be scaled to accomodate any level of traffic. This project is sponsored by [Dryverless, Inc.](http://www.dryverless.com) and is a non-commercial project covered by fair use exemption for the purposes of research and commentary.
@@ -20,14 +20,13 @@ Sample project in C# and Swift 3 to demonstrate building a comprehensive Pokemon
   - Use Lucky Eggs
   - Use Incense
   - Use Best Pokeball or Berry
-  - Cloud-based Botting
   - Data Export / Mining via Azure ML
 
 This repo, when complete, will contain a sample full application (client and back-end in separate projects) that demonstrates using Swift 3 for iOS 10 with a ASP.NET 4.6.x Web API on Azure using DocumentDB and Azure Search. Swift 2.x support is handled via iOS 9.x MobileApp project.
 
 Real-time support is handled via websockets and SignalR for the purposes of demonstration. If you choose to use a backplane, you should be aware of latency or cost issues that might be incurred.
 
-### Current API Methods List
+### Current .NET API Methods List
 
 #### Bot Utils
 
@@ -44,7 +43,7 @@ Real-time support is handled via websockets and SignalR for the purposes of demo
 - [x] Use Capture Items
 - [x] UseRazzBerry
 - [x] Use Item XP Boost
-- [ ] Update Player Location
+- [] Update Player Location
 - [ ] Get Xp Differential
 - [ ] Get Total Pokemon
 - [ ] Get Total Experience
