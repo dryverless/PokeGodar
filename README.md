@@ -43,7 +43,7 @@ Real-time support is handled via websockets and SignalR for the purposes of demo
 - [x] Use Capture Items
 - [x] UseRazzBerry
 - [x] Use Item XP Boost
-- [] Update Player Location
+- [ ] Update Player Location
 - [ ] Get Xp Differential
 - [ ] Get Total Pokemon
 - [ ] Get Total Experience
