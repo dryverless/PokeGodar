@@ -1,140 +1,9 @@
 ###Cups of coffee donated: :coffee:
 
 # PokeGodar
-###Status:
+###Status: Project Cancelled
 
-- [x] Web Maps - Builds. Ready for demo Azure Search index / key to try out. Needs Icon assets, and other HTML/CSS stuff.
-- [ ] Web API - Builds. Runtime error, see this [comment](https://github.com/dotnet/corefx/issues/9846#issuecomment-234315688). API Methods below. Bot Framework and Azure Search are being added. Needs web.config file additions to run.
-- [ ] Swift2 - Not Building. Base project with Swift-based Pokemon GO API, hasn't had MapKit-related VCs put in yet.
-- [ ] Swift3 - Not Building. Similar to Swift2, except uses a fork of pgoapi-swift that is converted to Swift3 with Beta dependencies.
-
-Sample project in C# and Swift 3 to demonstrate building a comprehensive Pokemon Go Radar / Bot with backend which can be scaled to accomodate any level of traffic. This project is sponsored by [Dryverless, Inc.](http://www.dryverless.com) and is a non-commercial project covered by fair use exemption for the purposes of research and commentary.
-
-####Planned Features
-  - PTC and Google Authentication
-  - Heartbeat / Autowalking
-  - Pokestop / Gym Farming
-  - Auto-catch Pokemon
-  - Evolve Pokemon
-  - Transfer Pokemon
-  - Use Lucky Eggs
-  - Use Incense
-  - Use Best Pokeball or Berry
-  - Data Export / Mining via Azure ML
-
-This repo, when complete, will contain a sample full application (client and back-end in separate projects) that demonstrates using Swift 3 for iOS 10 with a ASP.NET 4.6.x Web API on Azure using DocumentDB and Azure Search. Swift 2.x support is handled via iOS 9.x MobileApp project.
-
-Real-time support is handled via websockets and SignalR for the purposes of demonstration. If you choose to use a backplane, you should be aware of latency or cost issues that might be incurred.
-
-### Current .NET API Methods List
-
-#### Bot Utils
-
-- [ ] Farm Pokestops and Pokemon (Auto Play Enabled)
-
-#### Player Utils
-
-- [x] Get Profile
-- [x] Get Settings
-- [x] Get Best Ball
-- [x] Recycle Item
-- [x] Get Items
-- [x] Get Inventory
-- [x] Use Capture Items
-- [x] UseRazzBerry
-- [x] Use Item XP Boost
-- [ ] Update Player Location
-- [ ] Get Xp Differential
-- [ ] Get Total Pokemon
-- [ ] Get Total Experience
-- [ ] Get Current Level
-
-#### Pokemon Utils
-
-- [x] Catch Pokemon
-- [x] Encounter Pokemon
-- [x] Transfer Pokemon
-- [x] Evolve Pokemon
-- [ ] Evolve All Given Pokemon
-- [ ] Catch All Nearby Pokemon
-- [ ] Transfer All But Strongest Unwanted Pokemon
-- [ ] Transfer All Given Pokemon
-- [ ] Transfer Duplicate Pokemon
-- [ ] Transfer All Weak Pokemon
-- [ ] Calculate Perfect
-
-#### Map Utils
-
-- [x] Get Map Objects
-
-#### Fort Utils
-
-- [x] Get Fort
-- [x] Search Fort
-
-#### Login Utils
-
-- [ ] Do Ptc Login
-- [ ] Do Google Login
-    - [ ] Do Google OAuth Login
-    - [ ] Get Access Token?
-
-
-<hr />
-
-####If you looking for a fully-supported development framework for quickly launching mobile applications, inquire via e-mail: [sales@dryverless.com](mailto:sales@dryverless.com?Subject=Ahtau Sales). Ask for a license to use the Ahtau Framework.
-
-####If you are an Advertiser or Publisher looking to increase payouts, lead generation, or explore new monetization strategies, sign up at [DryverlessAds.com](http://www.dryverlessads.com).
-
-<hr />
-
-####Azure Service Requirements for Deployment
-
-You must configure the project with your own Azure Search Keys, Azure DocumentDB Database Connection Information, and Bing Maps API Keys.
-
-######For Bot Framework integration, you need to register with your links to Messaging API Endpoint (.../api/Messages), Privacy Statement, Terms of Use, and Microsoft App ID:
-https://dev.botframework.com/bots/new
-
-######If you are new to Azure, you can get a free trial at the following link: 
-https://azure.microsoft.com/en-us/pricing/free-trial/
-
-######Bing Maps API (10k transactions/mo for free)
-http://www.microsoft.com/maps/Licensing/licensing.aspx#mainTab2
-
-######Azure Search Service are free excluding outbound data transfers (3 data connections / indexes / indexers, 50 MB Total Storage, 10,000 Documents).
-https://azure.microsoft.com/en-us/pricing/details/search/
-
-######Azure DocumentDB requires at least an S1 plan ($25/mo = 250 RU/sec, 10 GB Storage) for each collection used (even empty ones).
-https://azure.microsoft.com/en-us/pricing/details/documentdb/
-
-######Data Transfers Pricing Details
-https://azure.microsoft.com/en-us/pricing/details/data-transfers/
-
-#####How User Data Appears on DocDB Server:
-```json
-{
-  "id": "463b5add-3abb-482c-8f72-9f199203e22b",
-  "UserName": "demo@github.com",
-  "Email": "demo@github.com",
-  "EmailConfirmed": true,
-  "PasswordHash": "AMZO39oQGu9eUtMcy8gho6oPxETXQ8OPmeju7JEVMeHW7LgQi/hcnEATX7294xfBKg==",
-  "SecurityStamp": "31a3e067-7508-41c4-acd5-d4311da67b2c",
-  "PhoneNumber": null,
-  "PhoneNumberConfirmed": false,
-  "TwoFactorEnabled": false,
-  "LockoutEnd": "0001-01-01T00:00:00+00:00",
-  "LockoutEnabled": false,
-  "AccessFailedCount": 0,
-  "Logins": [],
-  "Claims": [],
-  "Roles": []
-}
-```
-
-#Related GitHub Projects / Credits
-
-###Pokemon-Go-Rocket-API by DetectiveSquirrel
-######https://github.com/DetectiveSquirrel/Pokemon-Go-Rocket-API
+##Related GitHub Projects / Credits
 
 ###pgoapi-swift by Luke Sapan
 ######https://github.com/lsapan/pgoapi-swift
@@ -196,7 +65,7 @@ https://azure.microsoft.com/en-us/pricing/details/data-transfers/
 
 ##Support:
 
-#####Send any questions or requests to: support@dryverless.com. You can reach our chat support on skype via the user: [dryverless](skype:dryverless?chat).
+#####Send any questions or requests to: support@dryverless.com
 
 ## Contributing
 
